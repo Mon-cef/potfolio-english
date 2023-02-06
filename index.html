@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" type="text/css" href="css/style.css">
+    <link rel = "preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script>
+        jQuery(function(){
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200 ) { 
+                        $('#scrollUp').css('right','10px');
+                    } else { 
+                        $('#scrollUp').removeAttr( 'style' );
+                    }
+
+                });
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="scroll_to_top">
+        <div id="scrollUp">
+            <a href="#top"><img src="images/to_top.png"/></a>
+        </div>
+    </div>
+
+    <div class="hero">
+        
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#propos">About Us</a></li>
+                <li><a href="#studie">Studies</a></li>
+                <li><a href="images/CV.pdf" target="_blank">CV</a></li>
+                <li><a href="#ct">Contact Us</a></li>
+            </ul>
+            <a href="https://institutionsaintaspais.fr/" target="_blank"><img src="images/image_st.jpeg" class="saint"></a>
+        </nav>
+        <div class="content">
+            <h4>Hello, my name is</h4>
+            <h1>Bekkouche <span>Safwân</span></h1>
+            <h3>I am studying at : <span ><a href="https://institutionsaintaspais.fr/" target="_blank" class="spa">Saint Aspais</a></span></h3>
+        </div>
+
+    </div>
+
+    <!-----About section start-->
+
+    <section class="about" id="propos">
+        <div class="main">
+            <img src="images/photo.jpg" alt="">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5><span>Cybersecurity & Development</span> Student</h5>
+                <p>I am a student in a <span>IT program field</span> . I'm learning <span>computer 
+                    development</span>, and <span>cybersecurity</span>. After my 2 years of BTS SIO, I plan to 
+                    specialize in a <span>license of cybersecurity</span> and deepen my knowledge in this
+                    field by doing a <span>Master</span>. Cybersecurity is a field that I am very <span>passionate</span> 
+                    about and I am <span>motivated</span> to learn more about it.</p>
+                <a href="#ct"><button  type="button" >Let's Talk</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Studie-->
+    <section>
+        <div class="studies" id="studie">
+            <div class="title">
+                <h2>My Studies</h2>
+            </div>
+
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5>BTS SIO</h5>
+                    <div class="pra">
+                        <p>In my BTS, there is two options, the first one is SLAM for program development.
+                            The second option is the SISR option which concerns the network.
+                        </p>
+                        <p style="text-align: center;">
+                            <a class="button" href="images/Referenciel_BTS_SIO.pdf" target="_blank">Read More</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h5>SLAM Option</h5>
+                    <div class="pra">
+                        <p> In this option, I will learn more about IT development and cybersecurity. I will learn a lot of programming languages like php, javascript, java, html/css and more.
+                        </p>
+                        <p style="text-align: center;">
+                            <a class="button" href="images/Referenciel_BTS_SIO.pdf" target="_blank">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h5>SISR Option</h5>
+                    <div class="pra">
+                        <p> Those who have chosen this option will learn more about,networks. They will learn about the role of each device on a network and how they work together.
+                        </p>
+                        <p style="text-align: center;">
+                            <a class="button" href="images/Referenciel_BTS_SIO.pdf" target="_blank">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!----Contact Me--->
+
+    <div class="contact-me">
+        <p>You want to profit from my skills ?</p>
+        <a class="button-two" href="#ct">Contact me</a>
+
+    </div>
+
+    <footer>
+        <p>Bekkouche Safwân</p>
+        <p>To contact, you can click on the icons below  </p>
+        <p>Or use my mail : safwanbekkouche@gmail.com </p>
+        <div class="social" id="ct">
+            <a href="https://www.instagram.com/_safwan_0/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-regular fa-at"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
